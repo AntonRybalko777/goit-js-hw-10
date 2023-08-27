@@ -1,0 +1,27 @@
+.is-hidden {
+  display: none;
+}
+
+.loader {
+  color: tomato;
+  font-weight: 700;
+}
+
+.error {
+  font-weight: 700;
+  color: red;
+}
+
+.cat-info {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.cat-desc {
+  max-width: 600px;
+}
+
+.cat-img {
+  border-radius: 5px;
+}
