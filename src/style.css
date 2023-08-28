@@ -1,7 +1,6 @@
-/* p.loader {
-  color: grey;
-  font-weight: 700;
-} */
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
 .error {
   font-weight: 700;
@@ -20,6 +19,9 @@
 
 .cat-img {
   border-radius: 5px;
+}
+.cat-header {
+  color: #ff3d00;
 }
 
 .breed-select {

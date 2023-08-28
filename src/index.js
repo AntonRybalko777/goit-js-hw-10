@@ -41,7 +41,7 @@ function handlerSelect(evt) {
       elements.div.innerHTML = `
       <img class="cat-img" src="${data[0].url}" alt="${data[0].breeds[0].name}" width="400">
       <div>
-        <h2>${data[0].breeds[0].name}</h2>
+        <h2 class="cat-header">${data[0].breeds[0].name}</h2>
         <p class="cat-desc">${data[0].breeds[0].description}</p>
         <p><b>Temperament: </b>${data[0].breeds[0].temperament}</p>
       </div>`;
