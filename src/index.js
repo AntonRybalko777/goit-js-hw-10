@@ -43,7 +43,7 @@ function handlerSelect(evt) {
       <div>
         <h2 class="cat-header">${data[0].breeds[0].name}</h2>
         <p class="cat-desc">${data[0].breeds[0].description}</p>
-        <p><b>Temperament: </b>${data[0].breeds[0].temperament}</p>
+        <p class="cat-temp"><b>Temperament: </b>${data[0].breeds[0].temperament}</p>
       </div>`;
       elements.loader.classList.add('is-hidden');
       elements.div.classList.remove('is-hidden');

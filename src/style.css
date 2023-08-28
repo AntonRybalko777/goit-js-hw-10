@@ -24,6 +24,10 @@ body {
   color: #ff3d00;
 }
 
+.cat-temp {
+  font-size: 13px;
+}
+
 .breed-select {
   margin-bottom: 10px;
   max-width: 250px;
