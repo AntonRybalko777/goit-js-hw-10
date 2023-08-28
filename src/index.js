@@ -1,5 +1,7 @@
 import { fetchBreeds, fetchCatByBreed } from './cat-api';
 import Notiflix from 'notiflix';
+import SlimSelect from 'slim-select';
+import 'slim-select/dist/slimselect.css';
 
 const elements = {
   select: document.querySelector('.breed-select'),
@@ -16,6 +18,9 @@ fetchBreeds()
     elements.select.innerHTML = markup;
     elements.select.classList.remove('is-hidden');
     elements.loader.classList.add('is-hidden');
+    new SlimSelect({
+      select: '#selector',
+    });
   })
   .catch(error => {
     Notiflix.Notify.failure(
