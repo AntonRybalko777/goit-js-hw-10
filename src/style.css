@@ -19,6 +19,7 @@ body {
 
 .cat-img {
   border-radius: 5px;
+  box-shadow: 7px 9px 22px -7px rgba(0, 0, 0, 0.75);
 }
 .cat-header {
   color: #ff3d00;
