@@ -23,7 +23,6 @@ fetchBreeds()
     );
     // elements.error.classList.remove('is-hidden');
     elements.loader.classList.add('is-hidden');
-    elements.select.classList.add('is-hidden');
     console.log(error);
   });
 
@@ -50,7 +49,7 @@ function handlerSelect(evt) {
       );
       // elements.error.classList.remove('is-hidden');
       elements.loader.classList.add('is-hidden');
-      elements.select.classList.add('is-hidden');
+      // elements.select.classList.add('is-hidden');
       console.log(error);
     });
 }
