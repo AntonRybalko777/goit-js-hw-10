@@ -17,19 +17,16 @@ fetchBreeds()
       .join('');
     elements.select.innerHTML = markup;
     elements.select.classList.remove('is-hidden');
-    elements.loader.classList.add('is-hidden');
     new SlimSelect({
       select: '#selector',
     });
   })
-  .catch(error => {
+  .catch(() => {
     Notiflix.Notify.failure(
       'Oops! Something went wrong! Try reloading the page!'
     );
-    // elements.error.classList.remove('is-hidden');
-    elements.loader.classList.add('is-hidden');
-    console.log(error);
-  });
+  })
+  .finally(() => elements.loader.classList.add('is-hidden'));
 
 elements.select.addEventListener('change', handlerSelect);
 
@@ -45,16 +42,12 @@ function handlerSelect(evt) {
         <p class="cat-desc">${data[0].breeds[0].description}</p>
         <p class="cat-temp"><b>Temperament: </b>${data[0].breeds[0].temperament}</p>
       </div>`;
-      elements.loader.classList.add('is-hidden');
       elements.div.classList.remove('is-hidden');
     })
-    .catch(error => {
+    .catch(() => {
       Notiflix.Notify.failure(
         'Oops! Something went wrong! Try reloading the page!'
       );
-      // elements.error.classList.remove('is-hidden');
-      elements.loader.classList.add('is-hidden');
-      // elements.select.classList.add('is-hidden');
-      console.log(error);
-    });
+    })
+    .finally(() => elements.loader.classList.add('is-hidden'));
 }
